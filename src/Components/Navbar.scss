@@ -1,0 +1,97 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+
+  .left {
+    display: flex;
+    gap: 1px;
+    align-items: center;
+
+    img {
+      width: 30px;
+      cursor: pointer;
+    }
+    .title {
+      font-family: "Questrial", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+
+    .links {
+      display: flex;
+      margin-left: 1px;
+      justify-content: center;
+      align-items: center;
+      .link {
+        margin-left: 12px;
+        color: white;
+        font-weight: 700;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: background-color 0.3s, border-radius 0.3s;
+        &.link:hover {
+          background-color: #1d2833d7;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    .exchange {
+      padding-right: 30px;
+      cursor: pointer;
+      height: 20px;
+      padding: 10px;
+
+      img {
+        width: 20px;
+        position: relative;
+        top: 4px;
+      }
+      .usdc {
+        margin-right: 5px;
+        margin-left: 5px;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .eth {
+        color: #7a8a99;
+        font-weight: 600;
+        font-size: 13px;
+        .arrow {
+          margin-left: 5px;
+        }
+      }
+      &.exchange:hover {
+        background-color: #1d283362;
+        padding: 10px;
+        border-radius: 10px;
+      }
+    }
+    .connect {
+      background-color: #1d2833;
+      font-weight: 700;
+      color: white;
+      padding: 10px 20px;
+      border: 1px solid #00c289;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 12px;
+      height: 40px;
+      margin-left: 10px;
+      &.connect:hover {
+        color: grey;
+        // background-color: #364453;
+      }
+    }
+  }
+}
