@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  width: 85vw;
+  margin: auto;
+  background-color: #1d2833;
+  border-radius: 10px;
+
+  .header {
+    display: flex;
+    justify-content: flex-start; /* Align text to the left */
+    margin-top: 30px;
+    align-items: center;
+    color: #7a8a99;
+    font-size: 12px;
+    font-weight: bold;
+
+    div {
+      flex-basis: calc(100% / 7);
+      text-align: left; /* Align text to the left */
+      margin-left: 10px;
+    }
+  }
+
+  .section {
+    display: flex;
+    justify-content: flex-start; /* Align elements to the left */
+    margin-top: 20px;
+    align-items: center;
+    padding-right: 20px;
+    list-style: none;
+    position: relative;
+    margin-bottom: 10px;
+    height: 10vh;
+
+    .details {
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+
+      img {
+        height: 40px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+      }
+
+      span {
+        font-weight: bold;
+      }
+
+      .symbol {
+        text-align: left; /* Align symbol to the left */
+        margin-left: 0;
+        color: #7a8a99;
+        font-size: 12px;
+      }
+
+      .meter {
+        background-color: #00c289;
+        border-radius: 8px;
+        height: 4px;
+        max-width: 100%;
+      }
+    }
+
+    div {
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      flex-basis: calc(100% / 7);
+      text-align: left; /* Align text to the left */
+      margin-left: 19px;
+    }
+  }
+}
