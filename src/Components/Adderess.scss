@@ -1,0 +1,42 @@
+.add{
+    display: flex;
+    width: 85vw;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    .logos{
+        display: flex;
+        background-color: #1d2833;
+        padding: 5px 5px;
+        border-radius: 25px;
+        margin-right: 5px;
+        .eth{
+            position: relative;
+            left: -5px;
+        }
+    }
+    .mainsec{
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+        .name{
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .coin{
+            color:#7a8a99;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+    .id{
+        color: #7a8a99;
+        .link{
+            position: relative;
+            top: 4px;
+        }
+    }
+}

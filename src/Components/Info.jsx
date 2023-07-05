@@ -83,7 +83,7 @@ const Info = () => {
         <div className="utilize">
           <div className="same">utilization</div>
           <div className="same">93.98%</div>
-          <div className="same" data-simplebar>scroll</div>
+          <div className="same"></div>
         </div>
         <div className="utilize new">
           <div className="sameOne">Borrow APR</div>
@@ -92,7 +92,6 @@ const Info = () => {
         <div className="last">
           <div className="">Earn APR</div>
           <div className="">3.19%</div>
-          <div className="">scroll</div>
         </div>
       </div>
     </div>
