@@ -1,6 +1,7 @@
 import React from 'react'
 import './Data.scss'
 import LineChart from './LineChart.jsx'
+import BarChart from './BarChart'
 const Data = () => {
   return (
 
@@ -15,6 +16,9 @@ const Data = () => {
         <div>
           <LineChart backgroundColor= 'rgba(0, 173, 121, 0.2)' borderColor= 'rgba(0, 173, 121, 1)' />
         </div>
+        <div style={{marginTop:'20px'}}>
+          <BarChart/>
+        </div>
     </div>
     <div className="right_data">
         <div className='bo'>
@@ -26,6 +30,9 @@ const Data = () => {
         <div>
         <LineChart backgroundColor='rgba(143, 102, 255, 0.2)' borderColor= 'rgba(143, 102, 255, 1)'/>
 
+        </div>
+        <div style={{marginTop:'20px'}}>
+          <BarChart/>
         </div>
     </div>
   </div>
