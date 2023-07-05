@@ -6,8 +6,26 @@ import market from '../Assets/markets.svg'
 import vote from '../Assets/vote.svg'
 import extension from '../Assets/extensions.svg'
 const Navbar = () => {
-const connectHandler=()=>{
-    console.log("hello");
+const connectHandler=async()=>{
+    if (window.ethereum) {
+        
+        try {
+            const accounts = await window.ethereum.request({
+              method: 'eth_requestAccounts',
+            });
+  
+            if (accounts.length > 0) {
+              const address = accounts[0];
+              localStorage.setItem("address",address)
+              console.log('Wallet address:', address);
+            }
+          } catch (error) {
+            console.log('Error fetching wallet address:', error);
+          }
+      } else {
+        // window.ethereum is not available
+        console.log('window.ethereum is not available');
+      }
 }
 
   return (
