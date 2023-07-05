@@ -1,0 +1,46 @@
+.main_data_container {
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  
+  .left_data {
+    text-align: left;
+    width: 40%;
+    .co{
+        color: #00ad79;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .price{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+  }
+  
+  .right_data {
+    position: relative;
+    right:8em;
+    width: 40%;
+    text-align: left;
+    .bo{
+        color: #8f66ff;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 10px; 
+    }
+    .price{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+
+  }
+  
